@@ -1,0 +1,37 @@
+GET http://localhost:5266/games
+
+###
+
+GET http://localhost:5266/games/1
+
+###
+POST http://localhost:5266/games
+Content-Type: application/json
+
+{
+  "name": "Mireo",
+  "genreId": 3,
+  "price": 3.99,
+  "releaseDate": "2024-06-03"
+}
+
+
+###
+PUT http://localhost:5266/games/1
+Content-Type: application/json
+
+{
+  "name": "Halo Infinite",
+    "genreId": 1,
+    "price": 59.99,
+    "releaseDate": "2024-06-01"
+}
+
+
+###
+DELETE http://localhost:5266/games/3
+
+
+
+###
+GET http://localhost:5266/genres
